@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Nyomtatás Megrendelés</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Üdvözöllek a 3D Nyomtatási Szolgáltatásomban!</h1>
+        <nav>
+            <ul>
+                <li><a href="#megrendeles">Megrendelés</a></li>
+                <li><a href="#kapcsolat">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="megrendeles">
+        <h2>Megrendelés</h2>
+        <p>Itt kérheted a 3D nyomtatást különböző tárgyakra.</p>
+        <form action="#" method="POST">
+            <label for="nev">Név:</label>
+            <input type="text" id="nev" name="nev" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="leiras">Tárgy leírása:</label>
+            <textarea id="leiras" name="leiras" required></textarea>
+            <label for="anyag">Anyag választás:</label>
+            <select id="anyag" name="anyag">
+                <option value="PLA">PLA</option>
+                <option value="ABS">ABS</option>
+                <option value="PETG">PETG</option>
+            </select>
+            <input type="submit" value="Megrendelés">
+        </form>
+    </section>
+    <section id="kapcsolat">
+        <h2>Kapcsolat</h2>
+        <p>Ha bárminemű kérdésed van, vedd fel velünk a kapcsolatot:</p>
+        <ul>
+            <li>Email: info@3dnyomtatasi.hu</li>
+            <li>Telefon: +36 20 123 4567</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2025 3D Nyomtatás. Minden jog fenntartva.</p>
+    </footer>
+</body>
+</html>
+/* Alap stílusok */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label, form textarea, form input, form select {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
